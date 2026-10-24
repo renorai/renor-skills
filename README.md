@@ -47,6 +47,57 @@ Claude Code, run these two commands:
 Then sign in once: run `/mcp`, select `plugin:renor:renor`, choose Authenticate, and approve
 in the browser. The plugin signs in with OAuth, so no token goes in your config.
 
+### Other agents
+
+Each of these installs the skill and the Renor MCP server together, or says how to add the
+server. Every one signs in with OAuth in the browser, so no token goes in your config.
+
+**Codex**
+
+```sh
+codex plugin marketplace add patrickpassosb/renor-skills
+codex plugin add renor@renor
+codex mcp login renor
+```
+
+**GitHub Copilot CLI**
+
+```sh
+copilot plugin marketplace add patrickpassosb/renor-skills
+copilot plugin install renor@renor
+```
+
+Then sign in to the `renor` MCP server, which Copilot CLI reads from the plugin.
+
+**Antigravity CLI** (`agy`)
+
+```sh
+agy plugin install https://github.com/patrickpassosb/renor-skills
+```
+
+Then run `/mcp`, choose `renor`, choose Authenticate, approve in the browser, and paste the
+code the browser shows back into the prompt. If you only want the server, put this in
+`~/.gemini/config/mcp_config.json` (or `.agents/mcp_config.json` in a workspace):
+
+```json
+{ "mcpServers": { "renor": { "serverUrl": "https://mcp.renor.cloud/mcp" } } }
+```
+
+**OpenCode** — add this to `opencode.json` in your project, then run `opencode mcp auth renor`:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "mcp": {
+    "renor": { "type": "remote", "url": "https://mcp.renor.cloud/mcp" }
+  }
+}
+```
+
+**Cline** — add `https://mcp.renor.cloud/mcp` as a remote server with the Streamable HTTP
+transport and click Authenticate. The exact steps for the extension and the CLI are in
+[`llms-install.md`](llms-install.md).
+
 ## What it does
 
 - `skills/renor-memory/SKILL.md` — the skill itself, in the Agent Skills format (YAML

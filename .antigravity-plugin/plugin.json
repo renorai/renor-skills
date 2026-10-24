@@ -1,0 +1,5 @@
+{
+  "$schema": "https://antigravity.google/schemas/v1/plugin.json",
+  "name": "renor",
+  "description": "Durable memory for AI agents. Connects Antigravity CLI to your Renor workspace over MCP and adds the renor-memory skill."
+}

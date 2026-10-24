@@ -1,0 +1,17 @@
+{
+  "name": "renor",
+  "owner": { "name": "Renor", "url": "https://renor.cloud" },
+  "metadata": { "description": "Renor: durable memory for AI agents, over MCP" },
+  "plugins": [
+    {
+      "name": "renor",
+      "source": "./",
+      "description": "Connect Copilot CLI to your Renor memory and teach it when to recall and when to save.",
+      "version": "0.1.0",
+      "homepage": "https://renor.cloud",
+      "repository": "https://github.com/patrickpassosb/renor-skills",
+      "license": "MIT",
+      "keywords": ["memory", "mcp", "context", "agents"]
+    }
+  ]
+}
