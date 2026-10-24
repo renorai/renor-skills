@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "author": { "name": "Renor", "url": "https://renor.cloud" },
   "homepage": "https://renor.cloud",
-  "repository": "https://github.com/patrickpassosb/renor-skills",
+  "repository": "https://github.com/renorai/renor-skills",
   "license": "MIT",
   "keywords": ["memory", "mcp", "context", "agents"],
   "skills": "skills/",

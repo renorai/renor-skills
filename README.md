@@ -15,7 +15,7 @@ the skill names only a placeholder token.
 Run this in your project directory. It asks nothing, so your agent can run it too:
 
 ```sh
-npx skills add patrickpassosb/renor-skills --agent '*' -y
+npx skills add renorai/renor-skills --agent '*' -y
 ```
 
 It puts the skill in `.agents/skills/renor-memory` in that directory and links it for the agents you use there.
@@ -25,13 +25,13 @@ recognises, such as Claude Code, it asks nothing. In a shell with no terminal an
 nothing, so give an agent the form above.
 
 ```sh
-npx skills add patrickpassosb/renor-skills@renor-memory
+npx skills add renorai/renor-skills@renor-memory
 ```
 
 For a specific agent (for example Claude Code and OpenCode, globally):
 
 ```sh
-npx skills add patrickpassosb/renor-skills@renor-memory -a claude-code -a opencode -g -y
+npx skills add renorai/renor-skills@renor-memory -a claude-code -a opencode -g -y
 ```
 
 ### Claude Code plugin
@@ -40,7 +40,7 @@ Claude Code can install the skill and the Renor MCP server together, as one plug
 Claude Code, run these two commands:
 
 ```text
-/plugin marketplace add patrickpassosb/renor-skills
+/plugin marketplace add renorai/renor-skills
 /plugin install renor@renor
 ```
 
@@ -55,7 +55,7 @@ server. Every one signs in with OAuth in the browser, so no token goes in your c
 **Codex**
 
 ```sh
-codex plugin marketplace add patrickpassosb/renor-skills
+codex plugin marketplace add renorai/renor-skills
 codex plugin add renor@renor
 codex mcp login renor
 ```
@@ -63,7 +63,7 @@ codex mcp login renor
 **GitHub Copilot CLI**
 
 ```sh
-copilot plugin marketplace add patrickpassosb/renor-skills
+copilot plugin marketplace add renorai/renor-skills
 copilot plugin install renor@renor
 ```
 
@@ -72,7 +72,7 @@ Then sign in to the `renor` MCP server, which Copilot CLI reads from the plugin.
 **Antigravity CLI** (`agy`)
 
 ```sh
-agy plugin install https://github.com/patrickpassosb/renor-skills
+agy plugin install https://github.com/renorai/renor-skills
 ```
 
 Then run `/mcp`, choose `renor`, choose Authenticate, approve in the browser, and paste the

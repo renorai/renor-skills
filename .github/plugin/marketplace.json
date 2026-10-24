@@ -9,7 +9,7 @@
       "description": "Connect Copilot CLI to your Renor memory and teach it when to recall and when to save.",
       "version": "0.1.0",
       "homepage": "https://renor.cloud",
-      "repository": "https://github.com/patrickpassosb/renor-skills",
+      "repository": "https://github.com/renorai/renor-skills",
       "license": "MIT",
       "keywords": ["memory", "mcp", "context", "agents"]
     }

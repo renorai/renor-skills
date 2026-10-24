@@ -51,7 +51,7 @@ The MCP server gives the agent the tools. The `renor-memory` skill tells it when
 them. Run this in your project directory:
 
 ```sh
-npx skills add patrickpassosb/renor-skills --agent '*' -y
+npx skills add renorai/renor-skills --agent '*' -y
 ```
 
 ## Requirements
