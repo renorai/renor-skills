@@ -5,7 +5,7 @@
   "description": "Durable memory for AI agents. Connects Claude Code to your Renor workspace over MCP and adds the renor-memory skill: recall what you already told an AI, record what should survive the session.",
   "author": { "name": "Renor", "url": "https://renor.cloud" },
   "homepage": "https://renor.cloud",
-  "repository": "https://github.com/patrickpassosb/renor-skills",
+  "repository": "https://github.com/renorai/renor-skills",
   "license": "MIT",
   "keywords": ["memory", "mcp", "context", "agents"],
   "documentationUrl": "https://renor.mintlify.app",

@@ -1,0 +1,12 @@
+{
+  "name": "renor",
+  "description": "Durable memory for AI agents. Connects Copilot CLI to your Renor workspace over MCP and adds the renor-memory skill: recall what you already told an AI, record what should survive the session.",
+  "version": "0.1.0",
+  "author": { "name": "Renor", "url": "https://renor.cloud" },
+  "homepage": "https://renor.cloud",
+  "repository": "https://github.com/renorai/renor-skills",
+  "license": "MIT",
+  "keywords": ["memory", "mcp", "context", "agents"],
+  "skills": "skills/",
+  "mcpServers": ".mcp.json"
+}
